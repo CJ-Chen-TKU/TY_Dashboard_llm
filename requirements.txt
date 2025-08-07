@@ -1,5 +1,6 @@
 streamlit
 openai
 pandas
+openpyxl
 fpdf
 pyngrok
