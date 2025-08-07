@@ -2,5 +2,7 @@ streamlit
 openai
 pandas
 openpyxl
-fpdf
+fpdf2
 pyngrok
+msal
+requests
