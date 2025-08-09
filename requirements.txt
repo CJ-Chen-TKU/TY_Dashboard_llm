@@ -1,5 +1,7 @@
-streamlit>=1.36.0
-pandas>=2.0.0
-requests>=2.31.0
-msal>=1.28.0
-openai>=1.35.0
+streamlit
+pandas
+openai
+requests
+matplotlib
+seaborn
+plotly
