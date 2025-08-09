@@ -6,3 +6,4 @@ msal>=1.28
 matplotlib>=3.8
 seaborn>=0.13
 plotly>=5.22
+fpdf2>=2.7
