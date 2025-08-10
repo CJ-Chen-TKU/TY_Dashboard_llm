@@ -1,33 +1,30 @@
-# GPT-4o Report Catalog Analyzer
+# 📊 Streamlit + OpenAI Multi-Code-Block Executor
 
-A Streamlit app to upload a report catalog Excel file, select reports, preview their data, and interactively query the data using OpenAI's GPT-4o model. Export GPT-generated insights as downloadable PDF reports.
+This app lets you **query your selected datasets** and **ask OpenAI** to produce both:
+- Narrative analysis
+- Python code (charts, stats, transformations, etc.)
 
----
-
-## Features
-
-- Upload an Excel catalog listing reports and their data file paths
-- Select reports from the catalog and preview data in tabular form
-- Ask GPT-4o questions about the selected data directly within the app
-- Download GPT-generated answers as PDF files
-- Supports data files in CSV, XLS, and XLSX formats
-- Works locally, in Google Colab, or deployed on cloud platforms
-- Secure API key input, compatible with Colab and local environments
+It will automatically:
+1. Send your **data context** and **tables** to OpenAI
+2. Display any **text analysis** returned
+3. **Execute all Python code blocks** from OpenAI’s reply in the app
+4. Show results (charts, tables, etc.) directly in Streamlit
 
 ---
 
-## Getting Started
+## 🚀 Features
+- **Multi-code-block support** — executes all ```python``` code blocks in order.
+- **Safe execution sandbox** with `run_safe_python`.
+- **Session-aware** — avoids re-running the same code unless a new AI response arrives.
+- **Full conversation history** stored in `st.session_state.chat`.
+- **Dynamic dataset and table selection** via Power BI/Fabric API.
+- **Preview tables** before asking questions.
+- Works with **any question**, not just charts — text analysis, stats, transformation code, etc.
 
-### Prerequisites
+---
 
-- Python 3.8 or newer
-- OpenAI API key with access to GPT-4o
-- Required Python packages (see `requirements.txt`)
+## 📦 Requirements
+Install dependencies:
 
-### Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+```bash
+pip install -r requirements.txt
